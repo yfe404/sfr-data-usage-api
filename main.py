@@ -51,17 +51,8 @@ if __name__ == "__main__":
     time.sleep(1)
     element.send_keys(Keys.RETURN)
 
-    xpath = "/html/body/header/nav[5]/ul/li[9]/a"
-    elem_info = (By.XPATH, xpath)
-    element = wait_element(driver, elem_info)
-    time.sleep(2)
-    element.click()
-
-    xpath = "/html/body/header/nav[5]/ul/li[4]/a"
-    elem_info = (By.XPATH, xpath)
-    element = wait_element(driver, elem_info)
-    time.sleep(2)
-    element.click()
+    time.sleep(1)
+    driver.get("https://espace-client-red.sfr.fr/infoconso-mobile/conso?red=1")
 
     xpath = "/html/body/div/div/div/div[2]/app-root/acceuil-component-bloc/div/div[3]/app-reinitialisation-forfait/div/div[1]"
     elem_info = (By.XPATH, xpath)
