@@ -59,7 +59,10 @@ if __name__ == "__main__":
     element = wait_element(driver, elem_info)
     print(f"Next reset: {element.text}")
 
-    xpath = "/html/body/div/div/div/div[2]/app-root/acceuil-component-bloc/div/div[3]/div[2]/app-en-france/section/div[2]/div[1]/div[1]/div[2]/p"
+    #exit()
+
+    xpath = "/html/body/div/div/div/div[2]/app-root/acceuil-component-bloc/div/div[3]/div[2]/app-en-france/section/div[2]/div[1]/div[1]/p"
+    #xpath = "/html/body/div/div/div/div[2]/app-root/acceuil-component-bloc/div/div[3]/div[2]/app-en-france/section/div[2]/div[1]/div[1]/div[2]/p"
     elem_info = (By.XPATH, xpath)
     element = wait_element(driver, elem_info)
     print(f"Usage: {element.text}")
